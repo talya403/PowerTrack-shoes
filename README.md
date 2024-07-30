@@ -2,7 +2,14 @@
 
 ![Project Cover Image](/media/coverImage.png)
 
-
+## Table of Contents
+- [The Team](#the-team)
+- [Project Description](#project-description)
+- [Getting Started](#getting-started)
+    - [Prerequisites](#prerequisites)
+    - [Installing](#installing)
+- [Built With](#built-with)
+  
 ## 👥 The Team 
 **Team Members**
 - [Itay Avidar](name@emial.com)
