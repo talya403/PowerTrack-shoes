@@ -46,8 +46,9 @@ To assemble such a shoe, you will need the following components:
 5. Heltec Cubecell AB02S (2 pieces)
 6. 868-915MHz Antenna (2 pieces)
 7. 800 mAh LiPo Battery
-8. Soldering device
-9. wires
+8. 2 led in different color
+9. Soldering device
+10. wires
     
 ### 🛠️ built the system
 
