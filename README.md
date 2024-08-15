@@ -32,13 +32,7 @@ with each step. This energy is stored in an integrated battery and can later be 
 a GPS module to pinpoint its location. The coordinates can then be sent through a transmitter,
 allowing rescuers to locate and assist the wearer.
 
-
-## ⚡ Getting Started
-
-
-### 🧱 Prerequisites
-To assemble such a shoe, you will need the following components:
-
+Our project included the following components:
 1. Piezoelectric Discs (20 pieces)
 2. 3D printed piezo bracket (if you don't have a printer, you can make it with cardboard)
 3. LTC3588 Energy Harvester
@@ -49,7 +43,21 @@ To assemble such a shoe, you will need the following components:
 8. 2 led in different colors
 9. Soldering device
 10. wires
-    
+11. Quechua NH100 shoes
+
+Our project is taking advantage of the following technologies:
+1. The piezoelectric effect
+2. LORA transmission (868-915Mhz)
+3. GPS
+
+
+## ⚡ Getting Started
+
+
+### 🧱 Prerequisites
+Constructing the project demends soldering and handeling with hardware components. Therefore, please make sure to posses a working soldering device and an orgenized space for it. 
+In addition, you will need to use the Arduino IDE (you can download it [here](https://www.arduino.cc/en/software)), so make sure your computer is able to run it.   
+
 ### 🛠️ built the system
 
 1️⃣ First, you need to solder the piezos together in groups of 5. Each group should be connected in series.
@@ -69,6 +77,7 @@ To assemble such a shoe, you will need the following components:
 **Now the shoes are ready to be used**
 
 ### 🏗️ Installing
+To install and incorporate the code, kindly download the attached codes to your computer. Us 
 
 
 ## ⚙️ Built With
