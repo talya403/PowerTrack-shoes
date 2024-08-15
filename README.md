@@ -12,7 +12,7 @@
   
 ## 👥 The Team 
 **Team Members**
-- [Itay Avidar]([itay.avidar@gmail.com](https://github.com/avidarit?tab=overview&from=2024-07-01&to=2024-07-31))
+- [Itay Avidar](https://github.com/avidarit?tab=overview&from=2024-07-01&to=2024-07-31)
 - [Talya Haya Feldhaim](talia403@emial.com)
 
 **Supervisor**
