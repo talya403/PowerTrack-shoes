@@ -12,7 +12,7 @@
   
 ## 👥 The Team 
 **Team Members**
-- [Itay Avidar](name@emial.com)
+- [Itay Avidar](itay.avidar@gmail.com)
 - [Talya Haya Feldhaim](talia403@emial.com)
 
 **Supervisor**
@@ -39,34 +39,34 @@ allowing rescuers to locate and assist the wearer.
 ### 🧱 Prerequisites
 To assemble such a shoe, you will need the following components:
 
-1. Piezoelectric Disc (20 pieces)
+1. Piezoelectric Discs (20 pieces)
 2. 3D printed piezo bracket (if you don't have a printer, you can make it with cardboard)
 3. LTC3588 Energy Harvester
-4. Button
+4. Electrical switch, containing a button
 5. Heltec Cubecell AB02S (2 pieces)
 6. 868-915MHz Antenna (2 pieces)
-7. 800 mAh LiPo Battery
-8. 2 led in different color
+7. 600 mAh LiPo Battery
+8. 2 led in different colors
 9. Soldering device
 10. wires
     
 ### 🛠️ built the system
 
-1️⃣ First, you need to connect the piezos in groups of 5. Within each group,they are connected in series.
-   To connect them in series, you need to solder the white wire of one piezo to the gold contact of the next piezo, as shown in the attached picture.
-   After that, all groups are connected in parallel. To connect in parallel, you solder all the white wires of the piezos to one wire and all the gold contacts to a second wire, as shown in theattached picture.
+1️⃣ First, you need to solder the piezos together in groups of 5. Each group should be connected in series.
+   To connect them in series, you need to solder the white cap of one piezo to the gold frame of the next piezo, as shown in the attached picture. In each group, you should leave 1 wire coming out of the white cap and 1 wire coming out of the gold frame unsoldered.
+   Now, you should connect all the groups in parallel. To connect in parallel, you solder all the wires coming out from the white caps of the piezos to one wire and all the wires coming out from the gold frames to a second wire, as shown in the attached picture.
 
 ![piezo connect image](/media/connectPiezo.jpg)
 
-2️⃣ connect the piezo and the battery to the  LTC3588 Energy Harvester 
+2️⃣ connect the piezo and the battery to the LTC3588 Energy Harvester. The wires coming out from the piezos should be connected to th PZT pins of the energy harvester, while the batter should be connected to the "Input" and the "GND" pins of the energy harvester. In addition, make sure that both 1/0 pins are callibrated to 1 to ensure an output voltage of 3.6V. 
 
-3️⃣ connect the button to the battery 
+3️⃣ Saperatly from connect the button to the battery 
 
 4️⃣ connect the 868-915MHz Antenna to Heltec Cubecell AB02S with the and connect one of the heltec to the battery
 
 5️⃣ Install the code provided and calibrate the Heltec on the shoe with a distress dispatcher’s code. Calibrate the other Heltec with a code for rescuers.
 
-**Now the shoes are ready to use**
+**Now the shoes are ready to be used**
 
 ### 🏗️ Installing
 
