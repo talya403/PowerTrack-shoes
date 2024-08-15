@@ -55,29 +55,37 @@ Our project is taking advantage of the following technologies:
 
 
 ### 🧱 Prerequisites
-Constructing the project demends soldering and handeling with hardware components. Therefore, please make sure to posses a working soldering device and an orgenized space for it. 
-In addition, you will need to use the Arduino IDE (you can download it [here](https://www.arduino.cc/en/software)), so make sure your computer is able to run it.   
+Before starting please make sure to have huking shoes with a thick sole. Constructing the project demends soldering and handeling with hardware components. Therefore, please also make sure to posses a working soldering device and an orgenized space for it. 
+In addition, you will need to use the Arduino IDE (you can download it [here](https://www.arduino.cc/en/software)).   
 
-### 🛠️ built the system
+### 🛠️ 🏗️ Installing and building the system
 
-1️⃣ First, you need to solder the piezos together in groups of 5. Each group should be connected in series.
+1️⃣ Based on your shoes, design and print a sole to contain the 20 piezo discs and a bracket for the electronic components. You can use our design which is designated for Quechua NH100 shoes (size 45 EU).
+
+2️⃣ Solder the piezos together in groups of 5. Each group should be connected in series.
    To connect them in series, you need to solder the white cap of one piezo to the gold frame of the next piezo, as shown in the attached picture. In each group, you should leave 1 wire coming out of the white cap and 1 wire coming out of the gold frame unsoldered.
-   Now, you should connect all the groups in parallel. To connect in parallel, you solder all the wires coming out from the white caps of the piezos to one wire and all the wires coming out from the gold frames to a second wire, as shown in the attached picture.
+   Now, you should connect all the groups in parallel. To connect in parallel, you solder all the wires coming out from the white caps of the piezos to one wire and all the wires coming out from the gold frames to a second wire, as shown in the attached picture. Now, fit the piezo discs inside the printed sole, so only 2 wires are coming out of it.
 
 ![piezo connect image](/media/connectPiezo.jpg)
 
-2️⃣ connect the piezo and the battery to the LTC3588 Energy Harvester. The wires coming out from the piezos should be connected to th PZT pins of the energy harvester, while the batter should be connected to the "Input" and the "GND" pins of the energy harvester. In addition, make sure that both 1/0 pins are callibrated to 1 to ensure an output voltage of 3.6V. 
+3️⃣ connect the piezo sole and the battery to the LTC3588 Energy Harvester. The wires coming out from the sole should be connected to th PZT pins of the energy harvester, while the batter should be connected to the "Input" and the "GND" pins of the energy harvester. In addition, make sure that both 1/0 pins are callibrated to 1 to ensure an output voltage of 3.6V. Now, saperatly from the energy harvester, connect the button to the battery and to the Helltec module, so pressing the button will activate the module using the battery's power. 
 
-3️⃣ Saperatly from connect the button to the battery 
+4️⃣ Connect the 868-915MHz Antenna to the designaten "antenna" pin of the Heltec Cubecell AB02S. Connect also the 2 LEDs to 2 I/O pins on the helltec module. Now, download the code provided ("TX_Final") and upload it to the Helltec module connected the battery using the Arduino IDE. Make sure to adjust the pins in the code according to the I/O pins you've chosen. Then, download the code provided ("RX_Final") and upload it to the seconed Helltec module, that will ack as the reciever.
 
-4️⃣ connect the 868-915MHz Antenna to Heltec Cubecell AB02S with the and connect one of the heltec to the battery
+5️⃣ Pierce the inner sole of the shoes so it will have enough space to hold the electronic bracket. Place the TX helltec module, the antenna and the energy harvester inside the bracket, and place the piezo sole on top of it. Now, make 3 holes on the shoes ankel part, and place the button and the 2 LEDs in them. Lastly, Connect the RX helltec module to your computer, download the python code provided and run it.
 
-5️⃣ Install the code provided and calibrate the Heltec on the shoe with a distress dispatcher’s code. Calibrate the other Heltec with a code for rescuers.
+**Now the shoes are ready to be used and when an SOS signal will be recived, a map containing the shoes location will appear**
 
-**Now the shoes are ready to be used**
+## 🧪 Testing
 
-### 🏗️ Installing
-To install and incorporate the code, kindly download the attached codes to your computer. Us 
+Before going out and using the shoes for the first time, it is important to make sure it works properly:
 
+1. Connect a voltmeter to the piezo sole and apply pressure on it. The voltmeter should present a pulse of voltage (that can get up to 30-35V in the pick of the pulse).
+2. connect the voltmeter to the "input" and "GND" pins of the energy harvester after appling pressure on the piezo sole for few minutes. The voltmeter should present a constant 3.6V.
+3. Press the SOS button and make sure both LEDs are turning on and immidietly turning off, before one of the start flashing.
+4. Walk with the shoes for few minutes and the inspect that the box for the electronics didn't implode and all the components are are intact.
+5. Press the SOS button while the shoes are exposed to the sky, wait a few minutes until one of the LEDs start flashing for 4 quick flashes in a row. It means that the GPS was succssesfuly calibrated. Now connect the RX helltec module to the computer and run the python code. The shoes's location should appear on the computer's screen.
 
-## ⚙️ Built With
+## 🚀 Deployment
+
+**The shoes are disgned to function outdoors.** Pressing the SOS button while the shoes are indoors or not exposed to the skys might cause the GPS to not calibrate or not to detect the shoes exact location. 
