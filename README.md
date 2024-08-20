@@ -88,4 +88,8 @@ Before going out and using the shoes for the first time, it is important to make
 
 ## 🚀 Deployment
 
-**The shoes are disgned to function outdoors.** Pressing the SOS button while the shoes are indoors or not exposed to the skys might cause the GPS to not calibrate or not to detect the shoes exact location. 
+**The shoes are disgned to function outdoors.** Pressing the SOS button while the shoes are indoors or not exposed to the skys might cause the GPS to not calibrate or not to detect the shoes exact location.
+
+## 🙏 Acknowledgments
+
+Special thanks to Matan Divald and the Center for Nanoscience and Nanotechnology of the hebrew university, for helping us designing and 3D printing our electronics box and piezo sole.
